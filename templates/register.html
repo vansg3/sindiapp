@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Registrar Usuário</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registrar Usuário</h1>
+        <form method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" required>
+            
+            <label for="workplace">Local de Trabalho:</label>
+            <input type="text" id="workplace" name="workplace" required> <!-- Campo novo para Local de Trabalho -->
+            
+            <button type="submit" class="button">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>

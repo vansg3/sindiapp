@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Administrador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> <!-- Link para o CSS -->
+</head>
+<body>
+    <h1>Login do Administrador</h1>
+
+    <form action="{{ url_for('login') }}" method="post" class="form-container"> <!-- Adicionei a classe form-container aqui -->
+        <label for="username">Nome de Usuário</label>
+        <input type="text" id="username" name="username" placeholder="Nome de Usuário" required>
+        
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Senha" required>
+        
+        <button type="submit" class="button">Entrar</button> <!-- Botão Entrar -->
+
+        
+    </form>
+</body>
+</html>

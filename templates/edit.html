@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Editar Usuário</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Editar Usuário</h1>
+        <form method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" value="{{ user[1] }}" required>
+            
+            <label for="address">Endereço:</label>
+            <input type="text" id="address" name="address" value="{{ user[2] }}" required>
+            
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="text" id="whatsapp" name="whatsapp" value="{{ user[3] }}" required>
+            
+            <label for="workplace">Local de Trabalho:</label>
+            <input type="text" id="workplace" name="workplace" value="{{ user[4] }}" required>
+
+            <button type="submit" class="button">Atualizar</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -95,7 +95,7 @@ def login():
         password = request.form['password']
 
         # Verifique se os dados estão corretos
-        if username == 'lazaro' and password == '7987':
+        if username == 'admin' and password == 'admin1':
             session['logged_in'] = True  # Marcar o usuário como autenticado
             return redirect(url_for('dashboard'))
         else:

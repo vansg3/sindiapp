@@ -44,17 +44,18 @@ tr:nth-child(even) {
 }
 
 .button {
-  background-color: #ff7e5f; /* Cor do botão */
-  color: white; /* Cor do texto do botão */
-  padding: 10px 20px; /* Espaçamento interno */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease; /* Transição suave */
-  width: 100%; /* Botão ocupa 100% da largura do container */
-  text-align: center; /* Centraliza o texto */
-  display: inline-block; /* Faz o botão se comportar como um bloco */
-}
+    background-color: #ff7e5f; /* Cor do botão */
+    color: white; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+    width: 95%; /* Botão ocupa 100% da largura do container */
+    text-align: center; /* Centraliza o texto */
+    display: inline-block; /* Faz o botão se comportar como um bloco */
+    text-decoration: none; /* Remove o sublinhado dos links com a classe button *
+  }
 
 
 .button:hover {
